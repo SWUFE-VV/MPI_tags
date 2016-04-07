@@ -1,0 +1,93 @@
+%!TEX program = xelatex
+
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.4 for LaTeX2e as of 16. April 2010
+%
+\documentclass{sig-alternate-05-2015}
+
+%
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{mathpartir}
+\usepackage{listings}
+\usepackage{alltt}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{paralist, tabularx}
+\usepackage{flushend}
+\usepackage{multirow}
+\usepackage{paralist}
+%\usepackage{amsthm}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{lmodern}
+
+
+\usepackage[flushleft]{threeparttable}
+\usepackage{footnote}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\def\UrlBreaks{\do\/\do-}
+
+\usepackage{color}
+\definecolor{egmcolor}{rgb}{1.0,0.0,0.722}
+\newcommand*{\egm}[1]
+%
+{\textcolor{egmcolor}{\noindent\textbf{[egm:~}\textit{#1}]}}
+%
+% Other things...
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+\newcommand{\defref}[1]{Definition~\ref{#1}}
+\newcommand{\tableref}[1]{Table~\ref{#1}}
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\lemmaref}[1]{Lemma~\ref{#1}}
+\newcommand{\coref}[1]{Corollary~\ref{#1}}
+\newcommand{\thmref}[1]{Theorem~\ref{#1}}
+\newcommand{\algoref}[1]{Algorithm~\ref{#1}}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\begin{document}
+
+\setcopyright{acmcopyright}
+
+
+%\conferenceinfo{CONF 'yy}{Month d--d, 20yy, City, ST, Country} 
+%\copyrightyear{20yy} 
+%\copyrightdata{978-1-nnnn-nnnn-n/yy/mm} 
+%\doi{nnnnnnn.nnnnnnn}
+
+\title{Analyzing Message Non-determinism and Collective Communication in MPI} 
+
+\maketitle
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\keywords{MPI, Message Passing, SMT}
+
+\input{introduction}
+\input{example}
+\input{encoding}
+\input{match}
+\input{experiment}
+\input{related}
+\input{conclusion}
+
+
+%\newpage
+\bibliographystyle{abbrv}
+%\bibliography{bib/paper}
+\end{document}
